@@ -1,0 +1,29 @@
+
+body{
+  background-color: #F7FE2E;
+}
+
+.containerSam{
+display: flex;
+justify-content: center;
+align-items:
+
+#sam{
+position: absolute;
+  background-image: url("img/sam.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 650px;
+  margin-top: 20px;
+  z-index: 1;
+
+}
+
+
+.text{
+position: relative;
+  font-size: 100px;
+  z-index: 2;
+}
