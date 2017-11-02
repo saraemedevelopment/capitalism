@@ -13,13 +13,13 @@ function Player() {
 
 
 Player.prototype.moveRight = function() {
-  if (this.x <= $('#board').width() - 25) {
+  if (this.x <= $('#board').width()-150) {
     this.x += this.vx;
   }
 };
 
 Player.prototype.moveLeft = function() {
-  if (this.x <= 5) {} else {
+  if (this.x <= 30) {} else {
     this.x -= this.vx;
   }
 };

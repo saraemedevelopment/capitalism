@@ -3,12 +3,18 @@
  src: url("../ARCADE.TTF");
  }
 
+ @font-face {
+  font-family: "Sport";
+  src: url("../SFSportsNight.ttf");
+  }
+
+
 #board {
   height: 550px;
   width: 1100px;
   position: relative;
   margin-top: 5px;
-  background-image: url("../img/west.jpg");
+  background-image: url("../img/nature.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +23,7 @@
 .player {
   position: absolute;
   height: 150px;
-  width: 100px;
+  width: 120px;
   background-image: url("../img/guitar.png");
   background-size: cover;
   background-position: center;
@@ -66,16 +72,18 @@ justify-content: flex-start;
 
 }
 
-.btn-primary{
+
+.btn-dark{
   width: 25%;
+  height: 60px;
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: monospace;
-  background-color: #FF8000;
+
 }
 
 .arcade{
-  font-family: Arcade;
+  font-family: Sport;
   color: #DF013A;
   font-size: 30px;
   margin: 0px;
@@ -83,15 +91,9 @@ justify-content: flex-start;
 }
 
 .arcadeS{
-  font-family: Arcade;
+  font-family: Sport;
   color: #FF8000;
   font-size: 25px;
   margin: 0px;
   padding: 0px;
 }
-
-.swal{
-  title: "Sweet!",
-  text: "Here's a custom image.",
-  imageUrl: 'thumbs-up.jpg'
-};

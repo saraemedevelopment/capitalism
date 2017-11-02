@@ -3,6 +3,12 @@
  src: url("../ARCADE.TTF");
  }
 
+ @font-face {
+  font-family: "Sport";
+  src: url("../SFSportsNight.ttf");
+  }
+
+
 #board {
   height: 550px;
   width: 1100px;
@@ -70,16 +76,17 @@ justify-content: flex-start;
 
 }
 
-.btn-primary{
+.btn-dark{
   width: 25%;
+  height: 60px;
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: monospace;
-  background-color: #FF8000;
 }
 
+
 .arcade{
-  font-family: Arcade;
+  font-family: Sport;
   color: #DF013A;
   font-size: 30px;
   margin: 0px;
@@ -87,7 +94,7 @@ justify-content: flex-start;
 }
 
 .arcadeS{
-  font-family: Arcade;
+  font-family: Sport;
   color: #FF8000;
   font-size: 25px;
   margin: 0px;
@@ -99,3 +106,8 @@ justify-content: flex-start;
   text: "Here's a custom image.",
   imageUrl: 'thumbs-up.jpg'
 };
+
+.time{
+  width: 60px;
+  height: 60px;
+}

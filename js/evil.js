@@ -14,7 +14,7 @@ function Evil(vx, lifes) {
 Evil.prototype.updateEvil = function() {
   this.x += this.vx;
   this.element.css({top: this.y,left: this.x});
-  if (this.x >= $("#board").width() || this.x <= 0) {
+  if (this.x >= $("#board").width()-70 || this.x <= 0) {
     this.vx *= -1;
   };
 };
