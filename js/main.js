@@ -1,10 +1,10 @@
-// flowers.play();
+revolution.play();
 
 var player = new Player();
-var trump = new Evil(8, 5);
+var trump = new Evil(5, 10);
 
 
-
+  $(".badge").text(trump.lifes);
 
 var bullets = [];
 
@@ -33,8 +33,6 @@ function ballOut() {
 };
 
 
-
-
 function checkObstacles() {
   bullets.forEach(function(bullet) {
   if ($(".bullet").collision(".evil").length > 0) {
@@ -43,6 +41,7 @@ function checkObstacles() {
     trump.lifes-=1;
     pain.play();
     $(".badge").text(trump.lifes);
+    changeEvil();
 
     }
 });};
@@ -58,5 +57,15 @@ $(document).ready(function() {
       bullets.forEach(bullet => bullet.updateShot());
       ballOut();
       checkObstacles();
+
   }, 1000 / 60);
 });
+
+function changeEvil(){
+
+  if(trump.lifes<=0){
+    if(!alert ("WOW...Ready for next level??")) document.location = 'level2.html';;
+    trump.lifes=0;
+  };
+
+};

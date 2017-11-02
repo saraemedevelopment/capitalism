@@ -1,7 +1,7 @@
 function Player() {
   this.x = 550;
   this.y = 400;
-  this.vx = 20;
+  this.vx = 50;
   this.element = $("<div>").attr("class", "player");
   this.element.css({
     top: this.y,
