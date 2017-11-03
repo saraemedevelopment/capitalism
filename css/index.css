@@ -5,6 +5,7 @@
 
 body {
   background-image: url(../img/fire.jpg);
+  background-repeat: no-repeat;
 }
 
 .containerSam {

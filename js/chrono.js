@@ -9,12 +9,3 @@ Chronometer.prototype.updateChrono= function(){
 
   this.time =Math.floor(this.time-1);
 };
-
-// 
-// Chronometer.prototype.nextLevel = function () {
-//
-//   if(this.time<=0){
-//     window.location.replace("lose.html");
-//   }
-//
-// };
