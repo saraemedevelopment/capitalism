@@ -1,7 +1,9 @@
 metal.play();
+var chrono = new Chronometer("clockdiv");
+
 
 var player = new Player();
-var trump = new Evil(20, 1);
+var trump = new Evil(15, 20);
 
 
 $(".badge").text(trump.lifes);
@@ -60,6 +62,9 @@ $(document).ready(function() {
     checkObstacles();
 
   }, 1000 / 60);
+  setInterval(function() {
+    chrono.updateChrono();
+  }, 1000);
 });
 
 function changeEvil() {
@@ -71,9 +76,11 @@ function changeEvil() {
 };
 
 function winner() {
+clearTimeout();
   window.open("win.html");
 }
 
 setTimeout(function() {
-  window.open("lose.html");
-}, 10000);
+  metal.pause();
+  window.location.replace("lose.html");
+}, 20000);

@@ -1,3 +1,5 @@
-clap.play();
-
 clearTimeout();
+
+metal.pause();
+
+clap.play();

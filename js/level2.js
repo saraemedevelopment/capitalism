@@ -1,7 +1,9 @@
 flowers.play();
 
+var chrono = new Chronometer("clockdiv");
+
 var player = new Player();
-var trump = new Evil(10, 2);
+var trump = new Evil(10, 10);
 
 
 $(".badge").text(trump.lifes);
@@ -61,15 +63,21 @@ $(document).ready(function() {
     checkObstacles();
 
   }, 1000 / 60);
+  setInterval(function() {
+    chrono.updateChrono();
+  }, 1000);
 });
 
 function changeEvil() {
   if (trump.lifes <= 0) {
-    if (!alert("WOW...Ready for next level??")) document.location = 'level3.html';;
+
+    if (!alert("WOW...Ready for next level??")) document.location = 'level3.html';
     trump.lifes = 0;
+    flowers.pause();
   };
 };
 
 setTimeout(function() {
-  window.open("lose.html");
-}, 10000);
+  flowers.pause();
+  window.location.replace("lose.html");
+}, 20000);

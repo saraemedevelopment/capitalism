@@ -17,10 +17,10 @@
 
 .player {
  position: absolute;
-  height: 170px;
+  height: 150px;
   width: 80px;
   background-image: url("../img/arab.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }

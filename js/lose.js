@@ -1,1 +1,5 @@
-cannon.play();
+// metal.stop();
+
+evil.play();
+
+clearTimeout();
