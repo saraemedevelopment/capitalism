@@ -1,0 +1,35 @@
+ @font-face {
+   font-family: "Sport";
+   src: url("../SFSportsNight.ttf");
+ }
+
+ body {
+   background-image: url(../img/fire.jpg);
+ }
+
+ .containerSam {
+   position: relative;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+ }
+
+ #sam {
+   background-image: url("../img/sam.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 450px;
+   height: 650px;
+   z-index: 1;
+ }
+
+ .text {
+   font-family: Sport;
+   color: white;
+   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+   position: absolute;
+   margin-top: 400px;
+   font-size: 80px;
+   z-index: 2;
+ }

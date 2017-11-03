@@ -1,0 +1,3 @@
+clap.play();
+
+clearTimeout();

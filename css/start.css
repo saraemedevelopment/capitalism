@@ -1,12 +1,7 @@
 @font-face {
- font-family: "Dead";
- src: url("../DEADCRT.ttf");
- }
-
- @font-face {
   font-family: "Sport";
   src: url("../SFSportsNight.ttf");
-  }
+}
 
 body {
   background-image: url(../img/fire.jpg);
@@ -33,23 +28,16 @@ body {
 .text {
   font-family: Sport;
   color: white;
-  text-shadow:
-     -1px -1px 0 #000,
-     1px -1px 0 #000,
-     -1px 1px 0 #000,
-     1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   position: absolute;
   margin-top: 400px;
   font-size: 80px;
   z-index: 2;
 }
 
-
 @import "compass/css3";
-
-
 .pulse-button {
-display: inline;
+  display: inline;
   float: right;
   position: absolute;
   top: 150px;
@@ -74,6 +62,7 @@ display: inline;
   box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
   -webkit-animation: pulse 1.5s infinite;
 }
+
 .pulse-button:hover {
   -webkit-animation: none;
 }
@@ -86,23 +75,23 @@ display: inline;
     @include transform(scale(1));
     box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
   }
-    100% {
+  100% {
     @include transform(scale(.9));
     box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
   }
 }
 
-a{
+a {
   color: white;
 }
 
-.instructions{
+.instructions {
   display: inline;
-    float: right;
-    position: absolute;
-    top: 80px;
-    left: 50px;
-    color: White;
-    font-family: monospace;
-    font-size: 16px;
+  float: right;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  color: White;
+  font-family: monospace;
+  font-size: 16px;
 }

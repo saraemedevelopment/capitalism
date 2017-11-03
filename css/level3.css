@@ -1,0 +1,94 @@
+ @font-face {
+  font-family: "Sport";
+  src: url("../SFSportsNight.ttf");
+  }
+
+
+#board {
+  height: 550px;
+  width: 1100px;
+  position: relative;
+  margin-top: 5px;
+  background-image: url("../img/sand.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.player {
+ position: absolute;
+  height: 170px;
+  width: 80px;
+  background-image: url("../img/arab.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.evil {
+  position: absolute;
+  height: 120px;
+  width: 100px;
+  background-image: url(../img/trump.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bullet {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+background-image: url(../img/Water_Melon_Explode/watermelon_0.png);
+  background-size: 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.containerTop{
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+align-items: flex-end;
+width: 1100px;
+}
+
+.containerTopLeft{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
+}
+
+
+.btn-dark{
+  width: 25%;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: monospace;
+
+}
+
+.arcade{
+  font-family: Sport;
+  color: #DF013A;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.arcadeS{
+  font-family: Sport;
+  color: #FF8000;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+}

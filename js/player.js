@@ -13,7 +13,7 @@ function Player() {
 
 
 Player.prototype.moveRight = function() {
-  if (this.x <= $('#board').width()-150) {
+  if (this.x <= $('#board').width() - 150) {
     this.x += this.vx;
   }
 };

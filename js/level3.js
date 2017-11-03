@@ -1,7 +1,7 @@
-flowers.play();
+metal.play();
 
 var player = new Player();
-var trump = new Evil(10, 2);
+var trump = new Evil(20, 1);
 
 
 $(".badge").text(trump.lifes);
@@ -51,7 +51,6 @@ function checkObstacles() {
   });
 };
 
-
 $(document).ready(function() {
   setInterval(function() {
     player.updatePlayer(),
@@ -64,11 +63,16 @@ $(document).ready(function() {
 });
 
 function changeEvil() {
+
   if (trump.lifes <= 0) {
-    if (!alert("WOW...Ready for next level??")) document.location = 'level3.html';;
-    trump.lifes = 0;
+    winner();
   };
+
 };
+
+function winner() {
+  window.open("win.html");
+}
 
 setTimeout(function() {
   window.open("lose.html");

@@ -1,10 +1,10 @@
 revolution.play();
 
 var player = new Player();
-var trump = new Evil(5, 10);
+var trump = new Evil(5, 2);
 
 
-  $(".badge").text(trump.lifes);
+$(".badge").text(trump.lifes);
 
 var bullets = [];
 
@@ -25,8 +25,10 @@ document.onkeydown = function(e) {
 
 function ballOut() {
   bullets.forEach(function(bullet) {
-    if (bullet.y < 0){
-      bullet.element.css({display: "none"});
+    if (bullet.y < 0) {
+      bullet.element.css({
+        display: "none"
+      });
       bullets.shift();
     }
   });
@@ -35,19 +37,19 @@ function ballOut() {
 
 function checkObstacles() {
   bullets.forEach(function(bullet) {
-  if ($(".bullet").collision(".evil").length > 0) {
-    bullet.element.css({display: "none"});
-    bullets.shift();
-    trump.lifes-=1;
-    pain.play();
-    $(".badge").text(trump.lifes);
-    changeEvil();
+    if ($(".bullet").collision(".evil").length > 0) {
+      bullet.element.css({
+        display: "none"
+      });
+      bullets.shift();
+      trump.lifes -= 1;
+      pain.play();
+      $(".badge").text(trump.lifes);
+      changeEvil();
 
     }
-});};
-
-
-
+  });
+};
 
 
 $(document).ready(function() {
@@ -55,17 +57,21 @@ $(document).ready(function() {
     player.updatePlayer(),
       trump.updateEvil(),
       bullets.forEach(bullet => bullet.updateShot());
-      ballOut();
-      checkObstacles();
+    ballOut();
+    checkObstacles();
 
   }, 1000 / 60);
 });
 
-function changeEvil(){
+function changeEvil() {
 
-  if(trump.lifes<=0){
-    if(!alert ("WOW...Ready for next level??")) document.location = 'level2.html';;
-    trump.lifes=0;
+  if (trump.lifes <= 0) {
+    if (!alert("WOW...Ready for next level??")) document.location = 'level2.html';;
+    trump.lifes = 0;
   };
 
 };
+
+setTimeout(function() {
+  window.open("lose.html");
+}, 10000);
