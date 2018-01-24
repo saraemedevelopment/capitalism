@@ -7,5 +7,5 @@ In this shooting game you have a little time to defeat your enemy with the weapo
 Move fast and knuckle down because Capitalism always wins.
 
 
-Play: https://github.com/saraemedevelopment/capitalism.git
+Play: https://saraemedevelopment.github.io/capitalism/
 
